@@ -99,5 +99,6 @@ if __name__ == "__main__":
 	idStr = raw_input("App ID > ")
 	idInt = int(idStr)
 	tags =  getTagsForGame(idInt)
+	print("App %d has the following tags:" % (idInt))
 	for tag in tags:
-		print(tag)
+		print("%s," % (tag)),
